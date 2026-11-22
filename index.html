@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Nadzór inwestycji budowlanych Ostróda - RESP Piotr Rogiński</title>
+<meta name="description" content="Inspektor nadzoru inwestorskiego i kierownik projektu. Przygotowanie inwestycji, dokumentacja, realizacja pod klucz i rozliczenia budowy. Ostróda i cała Polska.">
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/bonarka3.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23212121'/%3E%3Cpath d='M8 30l10-5 12 15L56 12l4 4-30 34z' fill='%236CBD14'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Archivo;src:url(fonts/archivo-pl.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0104-0107,U+010C-010D,U+0118-011B,U+0141-0144,U+0158-0161,U+016E-016F,U+0179-017E}
+:root{--px:clamp(20px,3.75vw,72px);--g:#6CBD14;--g2:#8FD63A;--g3:#4F9A10;--gr:#212121;--gr2:#2B2D2F;--sz:#EEF0F2;--tx:#1B1D1F;--mu:#565B61;--hh:68px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh)}
+body{margin:0;font-family:Archivo,Arial,sans-serif;font-stretch:100%;font-size:17px;line-height:1.6;color:var(--tx);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-stretch:78%;font-weight:800;line-height:1.08;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(32px,4.2vw,54px)}
+h3{font-size:22px;line-height:1.2}
+p{margin:0 0 1em}
+.wrap{width:min(1240px,100% - 40px);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 22px;font:700 16px/1 Archivo,Arial,sans-serif;text-decoration:none;border:2px solid var(--g);background:var(--g);color:#0f1a04;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{background:var(--g2);border-color:var(--g2)}
+.btn svg{width:20px;height:14px;flex:none}
+.btn.out{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn.out:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.ptak{display:block;width:46px;height:30px;margin:18px 0 0}
+/* naglowek */
+.top{position:sticky;top:0;z-index:30;height:var(--hh);background:#fff;border-bottom:1px solid #DDE1E5}
+.top .wrap{width:auto;margin:0 var(--px);height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;text-decoration:none;color:var(--gr)}
+.logo svg{height:34px;width:auto}
+.menu{display:flex;align-items:center;gap:30px;font-weight:600;font-size:16px}
+.menu a{text-decoration:none;position:relative;padding:6px 0}
+.menu a.nav:after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--g);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.menu a.nav:hover:after,.menu a.nav.on:after{transform:scaleX(1)}
+.menu .tel{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:var(--gr);color:#fff}
+.menu .tel b{color:var(--g2);font-weight:700}
+.burg{display:none;width:48px;height:48px;border:0;background:var(--gr);cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burg span,.burg span:before,.burg span:after{display:block;width:22px;height:2px;background:#fff;position:relative;content:"";transition:transform .2s}
+.burg span:before{position:absolute;top:-7px}.burg span:after{position:absolute;top:7px}
+.burg[aria-expanded=true] span{background:transparent}.burg[aria-expanded=true] span:before{transform:translateY(7px) rotate(45deg)}.burg[aria-expanded=true] span:after{transform:translateY(-7px) rotate(-45deg)}
+/* hero */
+.hero{display:grid;grid-template-columns:5fr 7fr;height:calc(100svh - var(--hh));min-height:600px;background:var(--gr)}
+.hero-txt{color:#fff;display:flex;flex-direction:column;justify-content:center;padding:40px var(--px)}
+.hero-txt .gdzie{color:#B9BEC4;font-size:16px;margin:0 0 18px;display:flex;align-items:center;gap:10px}
+.hero-txt .gdzie svg{width:22px;height:15px}
+.hero h1{font-size:clamp(36px,3.9vw,74px);max-width:14ch}
+.hero h1 span{display:block;font-weight:600;font-stretch:85%;color:#D7DBDF;font-size:.56em;line-height:1.2;margin-top:.45em;max-width:24ch}
+.hero .lead{color:#C9CDD2;font-size:clamp(17px,1.15vw,21px);max-width:36ch;margin:22px 0 30px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-foto{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;background:var(--gr);min-height:0}
+.hero-foto figure{margin:0;position:relative;overflow:hidden;min-height:0}
+.hero-foto img{width:100%;height:100%;object-fit:cover}
+.hero-foto figcaption{position:absolute;left:0;bottom:0;padding:8px 14px 8px 12px;background:rgba(33,33,33,.86);color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px}
+.hero-foto figcaption:before{content:"";width:12px;height:8px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'%3E%3Cpath d='M0 18l10-5 12 15L54 0l6 5-38 35z' fill='%238FD63A'/%3E%3C/svg%3E") center/contain no-repeat}
+/* o mnie */
+.sek{padding:clamp(64px,8vw,120px) 0}
+.omnie .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,96px);align-items:start}
+.omnie .intro{font-size:clamp(19px,1.5vw,22px);line-height:1.5;color:var(--tx)}
+.omnie .kto{display:flex;align-items:center;gap:22px;margin-top:30px;padding-top:24px;border-top:1px solid #DDE1E5}
+.omnie .kto img{width:150px;height:auto;filter:invert(1)}
+.omnie .kto b{display:block;font-size:19px}
+.omnie .kto small{color:var(--mu);font-size:15px}
+.lista{list-style:none;margin:0;padding:0}
+.lista li{position:relative;padding:16px 0 16px 46px;border-bottom:1px solid #DDE1E5}
+.lista li:first-child{border-top:1px solid #DDE1E5}
+.lista li:before{content:"";position:absolute;left:0;top:21px;width:26px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'%3E%3Cpath d='M0 18l10-5 12 15L54 0l6 5-38 35z' fill='%236CBD14'/%3E%3Cpath d='M10 13l12 15L54 0 22 22z' fill='%238FD63A'/%3E%3C/svg%3E") center/contain no-repeat}
+.lista b{display:block;font-size:18px;line-height:1.3;margin-bottom:2px}
+.lista span{color:var(--mu);font-size:16px}
+.omnie h3{font-size:24px;margin:0 0 18px}
+/* zakres */
+.zakres{background:var(--sz)}
+.zakres .gora{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.zakres .gora p{color:var(--mu);margin:0;max-width:52ch}
+.etapy{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+.etapy:before{content:"";position:absolute;left:0;right:0;top:19px;height:3px;background:var(--gr)}
+.etapy li{position:relative;padding:62px 22px 0 0}
+.etapy li:before{content:"";position:absolute;left:0;top:0;width:41px;height:41px;background:var(--gr) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'%3E%3Cpath d='M0 18l10-5 12 15L54 0l6 5-38 35z' fill='%236CBD14'/%3E%3Cpath d='M10 13l12 15L54 0 22 22z' fill='%238FD63A'/%3E%3C/svg%3E") center/24px 16px no-repeat}
+.etapy .kto{display:block;font-size:14px;font-weight:700;color:var(--g3);margin-bottom:6px}
+.etapy h3{font-size:22px;margin-bottom:12px}
+.etapy p{font-size:16px;color:var(--mu);margin:0}
+/* lista kontrolna */
+.ciemna{background:var(--gr);color:#fff}
+.ciemna .wrap{display:grid;grid-template-columns:6fr 5fr;gap:clamp(36px,6vw,90px);align-items:center}
+.ciemna .lead{color:#C9CDD2;font-size:18px;max-width:46ch;margin:22px 0 32px}
+.ciemna .lista li{border-color:#3A3D40}
+.ciemna .lista span{color:#AEB3B9}
+.ciemna figure{margin:0;position:relative}
+.ciemna figure img{width:100%;height:auto;max-width:640px;aspect-ratio:640/350;object-fit:cover}
+.ciemna figure img+img{margin-top:3px}
+.ciemna figcaption{font-size:14px;color:#AEB3B9;margin-top:12px}
+/* realizacje */
+.real .gora{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}
+.real .gora p{color:var(--mu);max-width:50ch;margin:14px 0 0}
+.strz{display:flex;gap:8px}
+.strz button{width:52px;height:52px;border:2px solid var(--gr);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.strz button:hover{background:var(--gr)}
+.strz button:hover path{stroke:#fff}
+.strz svg{width:20px;height:14px}
+.pas{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 max(20px,(100% - 1240px)/2);cursor:grab;-webkit-overflow-scrolling:touch}
+.pas::-webkit-scrollbar{display:none}
+.pas.drag{cursor:grabbing;scroll-snap-type:none}
+.karta{flex:0 0 min(440px,82vw);scroll-snap-align:start;scroll-margin-left:max(20px,(100vw - 1240px)/2);background:none;border:0;padding:0;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.karta .zdj{position:relative;overflow:hidden;aspect-ratio:16/10;background:var(--sz)}
+.karta img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.karta:hover img{transform:scale(1.03)}
+.karta .ile{position:absolute;right:0;bottom:0;background:var(--gr);color:#fff;font-size:14px;font-weight:600;padding:7px 12px}
+.karta h3{margin:16px 0 4px;font-size:23px}
+.karta span.op{color:var(--mu);font-size:15px}
+/* kontakt */
+.kontakt{background:var(--sz)}
+.kontakt .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(36px,6vw,90px)}
+.kontakt .lead{color:var(--mu);margin:20px 0 22px;max-width:44ch}
+.kontakt .lista li{padding:11px 0 11px 40px}
+.kontakt .lista li:before{top:16px;width:22px;height:15px}
+.dane{margin-top:32px;display:grid;gap:6px;font-size:17px}
+.dane a{font-weight:700;text-decoration:none}
+.dane a.duzy{font-size:clamp(26px,2.6vw,34px);font-stretch:80%;font-weight:800}
+.dane a:hover{color:var(--g3)}
+form{background:#fff;padding:clamp(24px,3.5vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:16px;align-self:start}
+form h3{grid-column:1/-1;font-size:26px}
+label{display:grid;gap:6px;font-size:15px;font-weight:600}
+label.c{grid-column:1/-1}
+input,textarea,select{font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C5CBD1;background:#fff;color:var(--tx);border-radius:0;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--g);outline-offset:0;border-color:var(--g)}
+textarea{min-height:130px;resize:vertical}
+.zgoda{grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;color:var(--mu)}
+.zgoda input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--g3)}
+form .btn{grid-column:1/-1;justify-self:start}
+.info{grid-column:1/-1;font-size:14px;color:var(--g3);font-weight:600;min-height:1em;margin:0}
+.mapa{height:360px;background:#DDE1E5}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+/* stopka */
+.stopka{background:var(--gr);color:#B9BEC4;padding:44px 0 30px;font-size:15px}
+.stopka .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+.stopka .logo{color:#fff;margin-bottom:12px}
+.stopka .logo svg{height:30px}
+.stopka b{color:#fff;display:block;margin-bottom:6px}
+.stopka .wylinka-badge b{display:inline;margin:0}
+.stopka a{text-decoration:none}.stopka a:hover{color:#fff}
+.stopka .dol{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #3A3D40;padding-top:20px;margin-top:6px;font-size:14px}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(18,18,18,.96);display:none;flex-direction:column;align-items:center;justify-content:center;padding:60px 16px}
+.lb.on{display:flex}
+.lb img{max-width:min(1280px,100%);max-height:calc(100svh - 150px);width:auto;height:auto;touch-action:pan-y}
+.lb .pod{color:#fff;margin-top:14px;font-weight:600;display:flex;gap:16px;align-items:center}
+.lb .pod small{color:#AEB3B9;font-weight:400}
+.lb button{position:absolute;background:var(--gr2);border:0;color:#fff;width:52px;height:52px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lb button:hover{background:var(--g3)}
+.lb .x{top:12px;right:12px;font-size:28px;line-height:1}
+.lb .pr{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+.lb svg{width:20px;height:14px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1100px){
+ .menu{gap:22px}
+ .etapy{grid-template-columns:1fr;gap:0}
+ .etapy:before{left:19px;right:auto;top:0;bottom:0;width:3px;height:auto}
+ .etapy li{padding:0 0 34px 66px}
+ .etapy li:last-child{padding-bottom:0}
+ .etapy h3{margin-bottom:6px}
+}
+@media (max-width:899px){
+ :root{--hh:60px}
+ body{font-size:16px}
+ .logo svg{height:28px}
+ .burg{display:flex}
+ .menu{position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:3px solid var(--g);padding:8px 20px 20px;transform:translateY(-130%);transition:transform .25s;z-index:-1;box-shadow:0 20px 30px rgba(0,0,0,.12)}
+ .menu{visibility:hidden}
+ .menu.on{transform:none;visibility:visible}
+ .menu a{padding:15px 0;border-bottom:1px solid #DDE1E5;font-size:18px}
+ .menu a.nav:after{bottom:-1px}
+ .menu .tel{margin-top:14px;justify-content:center;padding:15px;border:0}
+ .hero{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto;min-height:calc(100svh - var(--hh));max-height:none}
+ .hero-foto{order:-1;grid-template-rows:1fr;height:clamp(140px,25svh,260px)}
+ .hero-foto figure:nth-child(n+3){display:none}
+ .hero-foto figcaption{font-size:12px;padding:5px 9px 5px 8px}
+ .hero-txt{padding:22px 20px 26px;justify-content:center}
+ .hero-txt .gdzie{font-size:14px;margin-bottom:10px}
+ .hero h1{font-size:clamp(29px,8.4vw,40px)}
+ .hero h1 span{font-size:.6em;margin-top:.35em}
+ .hero .lead{font-size:16px;line-height:1.5;margin:12px 0 24px}
+ .hero .cta{gap:10px}
+ .hero .cta .btn{flex:1 1 0;justify-content:center;padding:0 10px;min-height:50px;font-size:15px;gap:8px;white-space:nowrap}
+ .hero .cta .btn svg{width:16px}
+ .omnie .wrap,.zakres .gora,.ciemna .wrap,.kontakt .wrap{grid-template-columns:1fr}
+ .zakres .gora{gap:16px;margin-bottom:40px}
+ .real .gora{flex-direction:column;align-items:flex-start}
+ .strz{display:none}
+ form{grid-template-columns:1fr}
+ .stopka .wrap{grid-template-columns:1fr 1fr}
+ .stopka .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:899px) and (max-height:700px){
+ .hero-foto{height:clamp(120px,22svh,200px)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="RESP - strona główna"><svg viewBox="0 0 176 44" role="img" aria-label="RESP"><text x="0" y="38" fill="#212121" style="font:800 46px Archivo,Arial,sans-serif;font-stretch:75%;letter-spacing:1px">RESP</text><g transform="translate(108 4) scale(1.1)"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></g></svg></a>
+  <button class="burg" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  <nav class="menu" id="menu">
+   <a class="nav" href="#o-mnie">O mnie</a>
+   <a class="nav" href="#zakres">Zakres</a>
+   <a class="nav" href="#realizacje">Realizacje</a>
+   <a class="nav" href="#kontakt">Kontakt</a>
+   <a class="tel" href="tel:+48533935735">Tel. <b>533 935 735</b></a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-txt">
+  <p class="gdzie"><svg viewBox="0 0 60 40" aria-hidden="true"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></svg>Ostróda, inwestycje w całej Polsce</p>
+  <h1>Nadzór inwestycji budowlanych<span>Prowadzę budowę za Ciebie, od działki do odbioru</span></h1>
+  <p class="lead">Ty masz pomysł i środki. Ja przygotuję inwestycję, dobiorę wykonawców i dopilnuję jakości.</p>
+  <div class="cta">
+   <a class="btn" href="#kontakt">Opisz inwestycję <svg viewBox="0 0 20 14" aria-hidden="true"><path d="M2 7h15M11 1l6 6-6 6" fill="none" stroke="#0f1a04" stroke-width="2.2"/></svg></a>
+   <a class="btn out" href="tel:+48533935735">533 935 735</a>
+  </div>
+ </div>
+ <div class="hero-foto">
+  <figure><img src="img/bonarka3.webp" width="1280" height="700" alt="Bonarka - wnętrze galerii handlowej" fetchpriority="high"><figcaption>Bonarka</figcaption></figure>
+  <figure><img src="img/ocsir3.webp" width="1280" height="700" alt="Stadion Ostródzkiego Centrum Sportu i Rekreacji" fetchpriority="high"><figcaption>OCSiR Ostróda</figcaption></figure>
+  <figure><img src="img/ambasada3.webp" width="1280" height="700" alt="Ambasada Brytyjska - przeszklona elewacja"><figcaption>Ambasada Brytyjska</figcaption></figure>
+  <figure><img src="img/lalo2.webp" width="1280" height="700" alt="Lalo Ostróda - budynek nad wodą wieczorem"><figcaption>Lalo Ostróda</figcaption></figure>
+ </div>
+</section>
+
+<section class="sek omnie" id="o-mnie">
+ <div class="wrap">
+  <div>
+   <h2>Inżynier, który zna budowę od placu</h2>
+   <svg class="ptak" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></svg>
+   <p class="intro" style="margin-top:26px">Jestem inżynierem budownictwa lądowego z uprawnieniami budowlanymi bez ograniczeń. Zaczynałem na placu budowy, potem byłem inżynierem budowy, kierownikiem robót i p.o. kierownika budowy.</p>
+   <p style="color:var(--mu)">Od końca 2012 roku wspieram inwestorów w przygotowaniu całego procesu budowlano-inwestycyjnego i nadzoruję jego realizację: od wytycznych inwestora, przez współpracę z projektantami, po odbiory.</p>
+   <div class="kto">
+    <div><b>Piotr Rogiński</b><small>właściciel RESP</small></div>
+   </div>
+  </div>
+  <div>
+   <h3>Co biorę na siebie</h3>
+   <ul class="lista">
+    <li><b>Formalności i projekt</b><span>Koordynuję cały proces administracyjno-prawny i projektowy.</span></li>
+    <li><b>Urzędy i gestorzy mediów</b><span>Reprezentuję inwestora w postępowaniach przed administracją publiczną i gestorami sieci.</span></li>
+    <li><b>Wykonawcy i nadzór</b><span>Pozyskuję ekipy wykonawcze i nadzorcze, pilnuję terminów i jakości.</span></li>
+    <li><b>Budowa pod klucz</b><span>Prowadzę wykonawstwo z wykończeniem, aż do decyzji o pozwoleniu na użytkowanie.</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="sek zakres" id="zakres">
+ <div class="wrap">
+  <div class="gora">
+   <div><h2>Każdy etap inwestycji odhaczony</h2><svg class="ptak" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></svg></div>
+   <p>Możesz powierzyć mi całą inwestycję albo jeden etap. Na każdym pilnuję, żeby budowa szła zgodnie z projektem, umową i budżetem.</p>
+  </div>
+  <ol class="etapy">
+   <li><h3>Dokumentacja projektowa</h3><p>PFU, projekt koncepcyjny, budowlany i wykonawczy, projekt wnętrz, małej architektury i zieleni. Współpraca z projektantami.</p></li>
+   <li><h3>Przygotowanie realizacji</h3><p>Status prawny działki, warunki zabudowy albo plan miejscowy, tytuł prawny do terenu, uzgodnienia.</p></li>
+   <li><span class="kto">Kierownik Projektu</span><h3>Realizacja inwestycji</h3><p>Dobór wykonawców, harmonogram i koordynacja wszystkich stron budowy.</p></li>
+   <li><span class="kto">Inspektor Nadzoru Inwestorskiego</span><h3>Nadzór inwestycji</h3><p>Kontrola jakości robót i zgodności z projektem, odbiory w imieniu inwestora.</p></li>
+   <li><h3>Rozliczenia budowy</h3><p>Kalkulacje, umowy z wykonawcami i rozliczenie inwestycji.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="sek ciemna">
+ <div class="wrap">
+  <div>
+   <h2>Inwestycja budowlana to proces, który trzeba przygotować</h2>
+   <svg class="ptak" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></svg>
+   <p class="lead">Czas poświęcony na przygotowanie inwestycji pozwala realnie oszczędzić pieniądze i uniknąć niepotrzebnego stresu. Zanim powstanie projekt, sprawdzam z Tobą:</p>
+   <ul class="lista">
+    <li><b>Kto jest właścicielem działki lub lokalu</b><span>i czy masz tytuł prawny do dysponowania nimi na cele budowlane.</span></li>
+    <li><b>Warunki zabudowy czy plan miejscowy</b><span>co wolno zbudować na tym terenie i w jakiej formie.</span></li>
+    <li><b>Czego oczekujesz od obiektu</b><span>przeznaczenie, wielkość i technologia wykonania.</span></li>
+    <li><b>Jakiej dokumentacji potrzebujesz</b><span>od programu funkcjonalno-użytkowego po projekt wykonawczy.</span></li>
+   </ul>
+  </div>
+  <figure>
+   <img src="img/imperial7-640.webp" srcset="img/imperial7-640.webp 640w, img/imperial7.webp 1280w" sizes="(max-width:899px) 100vw, 40vw" width="1280" height="700" alt="Konstrukcja stalowa obiektu Imperial w trakcie budowy" loading="lazy">
+   <img src="img/imperial1-640.webp" srcset="img/imperial1-640.webp 640w, img/imperial1.webp 1280w" sizes="(max-width:899px) 100vw, 40vw" width="1280" height="700" alt="Gotowy budynek Imperial" loading="lazy">
+   <figcaption>Imperial: od konstrukcji do gotowego budynku</figcaption>
+  </figure>
+ </div>
+</section>
+
+<section class="sek real" id="realizacje">
+ <div class="wrap">
+  <div class="gora">
+   <div><h2>Prestiżowe inwestycje w całym kraju</h2><svg class="ptak" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></svg><p>Ambasada, galerie handlowe, obiekty sportowe i lokale gastronomiczne. Kliknij, żeby obejrzeć zdjęcia z budowy i po oddaniu.</p></div>
+   <div class="strz"><button type="button" data-k="-1" aria-label="Poprzednie"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M18 7H3M9 1L3 7l6 6" fill="none" stroke="#212121" stroke-width="2.2"/></svg></button><button type="button" data-k="1" aria-label="Następne"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M2 7h15M11 1l6 6-6 6" fill="none" stroke="#212121" stroke-width="2.2"/></svg></button></div>
+  </div>
+ </div>
+ <div class="pas" id="pas">
+  <button class="karta" type="button" data-g="ambasada"><div class="zdj"><img src="img/ambasada1-640.webp" width="640" height="350" alt="Ambasada Brytyjska" loading="lazy"><span class="ile">7 zdjęć</span></div><h3>Ambasada Brytyjska</h3><span class="op">budynek ambasady</span></button>
+  <button class="karta" type="button" data-g="ava"><div class="zdj"><img src="img/ava1-640.webp" width="640" height="350" alt="Galeria Awangarda" loading="lazy"><span class="ile">5 zdjęć</span></div><h3>Galeria Awangarda</h3><span class="op">galeria handlowa</span></button>
+  <button class="karta" type="button" data-g="bonarka"><div class="zdj"><img src="img/bonarka1-640.webp" width="640" height="350" alt="Bonarka" loading="lazy"><span class="ile">9 zdjęć</span></div><h3>Bonarka</h3><span class="op">centrum handlowe</span></button>
+  <button class="karta" type="button" data-g="galeria_przymorze"><div class="zdj"><img src="img/galeria_przymorze1-640.webp" width="640" height="350" alt="Galeria Przymorze" loading="lazy"><span class="ile">7 zdjęć</span></div><h3>Galeria Przymorze</h3><span class="op">galeria handlowa</span></button>
+  <button class="karta" type="button" data-g="imperial"><div class="zdj"><img src="img/imperial1-640.webp" width="640" height="350" alt="Imperial" loading="lazy"><span class="ile">8 zdjęć</span></div><h3>Imperial</h3><span class="op">obiekt biurowy</span></button>
+  <button class="karta" type="button" data-g="lalo"><div class="zdj"><img src="img/lalo3-640.webp" width="640" height="350" alt="Lalo Ostróda" loading="lazy"><span class="ile">3 zdjęć</span></div><h3>Lalo Ostróda</h3><span class="op">lokal gastronomiczny nad wodą</span></button>
+  <button class="karta" type="button" data-g="ocsir"><div class="zdj"><img src="img/ocsir4-640.webp" width="640" height="350" alt="OCSiR Ostróda" loading="lazy"><span class="ile">8 zdjęć</span></div><h3>OCSiR Ostróda</h3><span class="op">stadion i obiekty sportowe</span></button>
+  <button class="karta" type="button" data-g="winners"><div class="zdj"><img src="img/winners2-640.webp" width="640" height="350" alt="Winners Sports Bar" loading="lazy"><span class="ile">6 zdjęć</span></div><h3>Winners Sports Bar</h3><span class="op">lokal w zabytkowym budynku</span></button>
+ </div>
+</section>
+
+<section class="sek kontakt" id="kontakt">
+ <div class="wrap">
+  <div>
+   <h2>Opowiedz mi o swojej inwestycji</h2>
+   <svg class="ptak" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></svg>
+   <p class="lead">Na początek wystarczy kilka zdań:</p>
+   <ul class="lista">
+    <li><b>co chcesz budować i gdzie</b></li>
+    <li><b>czy masz już działkę</b></li>
+    <li><b>czy masz już projekt</b></li>
+    <li><b>w czym mogę Ci pomóc</b></li>
+   </ul>
+   <div class="dane">
+    <a class="duzy" href="tel:+48533935735">+48 533 935 735</a>
+    <a href="mailto:piotr.roginski@resp.pl">piotr.roginski@resp.pl</a>
+    <span>Poniedziałek - piątek, 9:00 - 18:00</span>
+    <span>RESP Piotr Rogiński, ul. 3 Maja 7/14, 14-100 Ostróda</span>
+   </div>
+  </div>
+  <form id="f" novalidate>
+   <h3>Napisz do mnie</h3>
+   <label>Imię i nazwisko<input name="n" autocomplete="name"></label>
+   <label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+   <label class="c">E-mail<input name="e" type="email" autocomplete="email"></label>
+   <label class="c">Twoja inwestycja<textarea name="m" placeholder="Np. dom jednorodzinny pod Ostródą, mam działkę, szukam projektanta"></textarea></label>
+   <label class="zgoda"><input type="checkbox"> Zgadzam się na przetwarzanie danych w celu odpowiedzi na wiadomość, zgodnie z polityką prywatności.</label>
+   <button class="btn" type="submit">Wyślij <svg viewBox="0 0 20 14" aria-hidden="true"><path d="M2 7h15M11 1l6 6-6 6" fill="none" stroke="#0f1a04" stroke-width="2.2"/></svg></button>
+   <p class="info" id="info" aria-live="polite"></p>
+  </form>
+ </div>
+</section>
+<div class="mapa" id="mapa" aria-label="Mapa dojazdu"></div>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div>
+   <a class="logo" href="#" aria-label="RESP"><svg viewBox="0 0 176 44" role="img" aria-label="RESP"><text x="0" y="38" fill="#FFFFFF" style="font:800 46px Archivo,Arial,sans-serif;font-stretch:75%;letter-spacing:1px">RESP</text><g transform="translate(108 4) scale(1.1)"><path d="M0 18l10-5 12 15L54 0l6 5-38 35z" fill="#6CBD14"/><path d="M10 13l12 15L54 0 22 22z" fill="#8FD63A"/></g></svg></a>
+   <p style="margin:0;max-width:40ch">Nadzór inwestycji budowlanych, kierownik projektu i przygotowanie inwestycji. Ostróda i cała Polska.</p>
+  </div>
+  <div><b>Kontakt</b><a href="tel:+48533935735">+48 533 935 735</a><br><a href="mailto:piotr.roginski@resp.pl">piotr.roginski@resp.pl</a></div>
+  <div><b>RESP Piotr Rogiński</b>ul. 3 Maja 7/14<br>14-100 Ostróda<br>NIP 742-200-44-78</div>
+  <div class="dol"><span>© 2026 RESP Piotr Rogiński · <a href="#">Polityka prywatności</a></span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=resp.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galeria">
+ <button class="x" type="button" aria-label="Zamknij">&times;</button>
+ <button class="pr" type="button" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M18 7H3M9 1L3 7l6 6" fill="none" stroke="#fff" stroke-width="2.2"/></svg></button>
+ <img id="lbi" alt="">
+ <button class="nx" type="button" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M2 7h15M11 1l6 6-6 6" fill="none" stroke="#fff" stroke-width="2.2"/></svg></button>
+ <div class="pod"><span id="lbt"></span><small id="lbn"></small></div>
+</div>
+
+<script>
+const G={"ambasada":{"n":"Ambasada Brytyjska","f":["ambasada1","ambasada2","ambasada3","ambasada4","ambasada5","ambasada6","ambasada7"]},"ava":{"n":"Galeria Awangarda","f":["ava1","ava","awangarda1","awangarda2","awangarda3"]},"bonarka":{"n":"Bonarka","f":["bonarka1","bonarka2","bonarka3","bonarka4","bonarka5","bonarka6","bonarka7","bonarka9","bonarka10"]},"galeria_przymorze":{"n":"Galeria Przymorze","f":["galeria_przymorze1","galeria_przymorze3","galeria_przymorze4","galeria_przymorze5","galeria_przymorze6","galeria_przymorze7","galeria_przymorze8"]},"imperial":{"n":"Imperial","f":["imperial1","imperial2","imperial3","imperial4","imperial5","imperial6","imperial7","imperial8"]},"lalo":{"n":"Lalo Ostróda","f":["lalo3","lalo1","lalo2"]},"ocsir":{"n":"OCSiR Ostróda","f":["ocsir4","ocsir","ocsir1","ocsir2","ocsir3","ocsir5","ocsir6","ocsir7"]},"winners":{"n":"Winners Sports Bar","f":["winners2","winners1","winners3","winners4","winners5","winners6"]}};
+(function(){
+const b=document.querySelector('.burg'),m=document.getElementById('menu');
+b.onclick=()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);m.classList.toggle('on',!o)};
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');m.classList.remove('on')}));
+const nav=[...document.querySelectorAll('.menu a.nav')],sek=nav.map(a=>document.querySelector(a.getAttribute('href')));
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){nav.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+sek.forEach(s=>s&&io.observe(s));
+const p=document.getElementById('pas');
+document.querySelectorAll('.strz button').forEach(x=>x.onclick=()=>p.scrollBy({left:x.dataset.k*(p.querySelector('.karta').offsetWidth+18),behavior:'smooth'}));
+let d=0,sx=0,sl=0,mv=0;
+p.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;d=1;mv=0;sx=e.clientX;sl=p.scrollLeft});
+window.addEventListener('pointermove',e=>{if(!d)return;const dx=e.clientX-sx;if(Math.abs(dx)>5){mv=1;p.classList.add('drag')}p.scrollLeft=sl-dx});
+window.addEventListener('pointerup',()=>{if(!d)return;d=0;p.classList.remove('drag')});
+p.addEventListener('click',e=>{if(mv){e.preventDefault();e.stopPropagation();mv=0;return}const k=e.target.closest('.karta');if(k)otw(k.dataset.g,0)},true);
+const lb=document.getElementById('lb'),li=document.getElementById('lbi'),lt=document.getElementById('lbt'),ln=document.getElementById('lbn');let cg=null,ci=0;
+function otw(g,i){cg=G[g];ci=i;pok();lb.classList.add('on');document.body.style.overflow='hidden'}
+function pok(){li.src='img/'+cg.f[ci]+'.webp';li.alt=cg.n+' - zdjęcie '+(ci+1);lt.textContent=cg.n;ln.textContent=(ci+1)+' / '+cg.f.length}
+function zm(k){ci=(ci+k+cg.f.length)%cg.f.length;pok()}
+function zam(){lb.classList.remove('on');document.body.style.overflow=''}
+lb.querySelector('.x').onclick=zam;lb.querySelector('.pr').onclick=()=>zm(-1);lb.querySelector('.nx').onclick=()=>zm(1);
+lb.addEventListener('click',e=>{if(e.target===lb)zam()});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')zam();if(e.key==='ArrowLeft')zm(-1);if(e.key==='ArrowRight')zm(1)});
+let tx=0;li.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});li.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)zm(dx<0?1:-1)});
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();document.getElementById('info').textContent='To podgląd strony - formularz zacznie wysyłać wiadomości na docelowej stronie.'});
+const mp=document.getElementById('mapa');new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){mp.innerHTML='<iframe title="Mapa: ul. 3 Maja 7, Ostróda" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=ul.%203%20Maja%207,%2014-100%20Ostr%C3%B3da&z=16&output=embed"></iframe>';o.disconnect()}},{rootMargin:'300px'}).observe(mp);
+})();
+</script>
+</body>
+</html>
